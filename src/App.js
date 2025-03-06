@@ -29,7 +29,7 @@ function App() {
 
         {/* Profile Image with Animated Light */}
         <div className="image-container">
-          <img src="/img.jpg" alt="Illustration of Faisury" className="profile-image" />
+        <img src={process.env.PUBLIC_URL + "/img.jpg"} alt="Ilustración" className="profile-image" />
           <div className="light-effect"></div>
         </div>
       </div>
