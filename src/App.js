@@ -38,7 +38,7 @@ function App() {
       <div className="buttons">
         <button className="btn cv">
         <a href="/Faisury-CV.pdf" className="btn cv cv-link" download>
-      Download CV
+        Download CV
       </a>
         </button>
         <button className="btn projects">
