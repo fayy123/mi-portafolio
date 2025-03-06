@@ -37,9 +37,9 @@ function App() {
       {/* Buttons */}
       <div className="buttons">
         <button className="btn cv">
-          <a href="/cv-faisury.pdf" download="Faisury-Salazar-CV.pdf" className="cv-link">
-            Download CV
-          </a>
+        <a href="https://fay123.github.io/mi-portafolio/Faisury-CV.pdf" download="Faisury-Salazar-CV.pdf" className="cv-link">
+        download CV
+        </a>
         </button>
         <button className="btn projects">
           View my projects
