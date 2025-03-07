@@ -29,7 +29,7 @@ function App() {
 
         {/* Profile Image with Animated Light */}
         <div className="image-container">
-        <img src={process.env.PUBLIC_URL + "/img.jpg"} alt="Ilustración" className="profile-image" />
+          <img src={process.env.PUBLIC_URL + "/img.jpg"} alt="Ilustración" className="profile-image" />
           <div className="light-effect"></div>
         </div>
       </div>
@@ -37,11 +37,11 @@ function App() {
       {/* Buttons */}
       <div className="buttons">
         <button className="btn cv">
-        <a href="/Faisury-CV.pdf" className="btn cv cv-link" download>
-        Download CV
-      </a>
+          <a href="/Faisury-CV.pdf" className="btn cv cv-link" download>
+            Download CV
+          </a>
         </button>
-        <button className="btn projects">
+        <button className="btn projects" onClick={() => alert("This feature will be available soon")}>
           View my projects
         </button>
       </div>
@@ -87,16 +87,16 @@ function App() {
       <div className="soft-skills">
         <h2>Soft Skills</h2>
         <div className="soft-skills-container">
-          <div className="soft-skill" title="Ability to work as a team">
+          <div className="soft-skill" data-message="Ability to work as a team">
             <FaUsers className="icon-soft" /> Teamwork
           </div>
-          <div className="soft-skill" title="Clear communication skills">
+          <div className="soft-skill" data-message="Clear communication skills">
             <FaComments className="icon-soft" /> Communication
           </div>
-          <div className="soft-skill" title="Innovation and creativity in projects">
+          <div className="soft-skill" data-message="Innovation and creativity in projects">
             <FaLightbulb className="icon-soft" /> Creativity
           </div>
-          <div className="soft-skill" title="Problem-solving skills">
+          <div className="soft-skill" data-message="Problem-solving skills">
             <FaPuzzlePiece className="icon-soft" /> Problem Solving
           </div>
         </div>

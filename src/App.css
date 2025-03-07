@@ -1,4 +1,4 @@
-/* Conten/edor principal */
+/* Contenedor principal */
 .container {
   text-align: center;
   padding: 50px 20px;
@@ -9,10 +9,10 @@
 
 /* Ajuste para centrar el texto debajo del título */
 .description {
-  max-width: 600px; /* Define un ancho máximo para el texto */
-  margin: 0 auto; /* Centra el texto */
-  text-align: center; /* Asegura que el texto esté centrado */
-  line-height: 1.6; /* Mejora la legibilidad */
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
 }
 
 /* Iluminación animada alrededor de la imagen */
@@ -33,8 +33,8 @@
   content: "";
   position: absolute;
   top: 0;
-  left: -100%;
-  width: 100%;
+  left: -150%;
+  width: 150%;
   height: 100%;
   background: linear-gradient(120deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 70%);
   border-radius: 15px;
@@ -43,10 +43,10 @@
 
 @keyframes lightMove {
   0% {
-    left: -100%;
+    left: -150%;
   }
   100% {
-    left: 100%;
+    left: 150%;
   }
 }
 
@@ -80,6 +80,12 @@
   transform: scale(1.05);
 }
 
+/* Ajuste para el enlace del CV */
+.cv-link {
+  text-decoration: none;
+  display: inline-block;
+}
+
 /* Habilidades Técnicas */
 .skills-container {
   margin-top: 30px;
@@ -107,6 +113,7 @@
   background: #ddd;
   border-radius: 5px;
   overflow: hidden;
+  min-width: 150px;
 }
 
 .html {
@@ -185,7 +192,7 @@
 
 /* Mensaje oculto */
 .soft-skill::after {
-  content: attr(data-message);
+  content: attr(aria-label);
   position: absolute;
   bottom: -35px;
   left: 50%;
@@ -261,13 +268,4 @@
 .social-links a:hover {
   transform: translateY(-3px);
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-}
-.cv-link {
-  text-decoration: none;
-  color: white;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  padding: 12px 0;
 }
